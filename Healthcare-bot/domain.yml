@@ -1,0 +1,63 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - day
+  - head_symptom
+  - head_whole
+  - head_sides
+  - head_crown
+  - head_eyes
+  - flu_symptom
+  - vision_symptom
+  - stomach_symptom
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Xin chào! Tôi có thể giúp gì cho bạn? Bạn có đang gặp phải bất kỳ vấn đề nào sau đây không: Đau đầu | Đau bụng | Cúm | Đau mắt"
+  utter_did_that_help:
+  - text: "Tôi hy vọng điều này sẽ giúp ích cho bạn.\n\ Nếu bạn muốn tiếp tục, vui lòng chọn vấn đề: Nhức đầu | Đau bụng | Cúm | Đau mắt.\n\ Nếu không, bạn có thể thoát ra"
+  utter_happy:
+  - text: "Tốt lắm, tiếp tục đi!"
+  utter_goodbye:
+  - text: "\nTạm biệt"
+  utter_day:
+  - text: "Bạn bị đau từ khi nào? chưa đầy 24 giờ | hơn 24 giờ"
+  utter_head_stomach_symptom:
+  - text: "Bạn có đang gặp vấn đề về dạ dày như trào ngược axit không? Có | Không"
+  utter_head_stomach_response:
+  - text: "1. Uống bơ sữa 2. Uống nước ấm với chanh 3. Uống giấm táo"
+  utter_head_symptom:
+  - text: "Đau nhất vùng nào trên đầu? Toàn đầu | Hai bên | Đỉnh | Xung quanh mắt"
+  utter_head_whole_response:
+  - text: "Điều này thường cho thấy Căng thẳng, Thay đổi thói quen hàng ngày hoặc Tính axit.\n\ Sau đây là một số biện pháp khắc phục tương tự:\n\ Căng thẳng – 1. Thiền và tập thở 2. Làm dịu cơn đau bằng chườm lạnh 3. Xông hơi\n\ Hàng ngày Thay đổi thói quen – 1. Ngủ đủ giấc 2. Tránh tiếp xúc trực tiếp với ánh nắng mặt trời 3. Giữ đủ nước\n\ Tính axit – 1. Tránh thực phẩm có tính axit 2. Tăng lượng chất xơ 3. Ăn uống điều độ"
+  utter_head_sides_response:
+  - text: "Điều này thường chỉ ra Chứng đau nửa đầu hoặc Viêm xoang.\n\ Sau đây là một số biện pháp khắc phục tương tự :\n\ Chứng đau nửa đầu - 1. Sử dụng Tinh dầu, 2. Thử bấm huyệt, 3. Tránh thực phẩm chế biến sẵn, thực phẩm ngâm chua hoặc đồ uống có ga.\n\ Xoang – 1. Xông hơi, 2. Dùng dầu khuynh diệp, 3. Uống Vitamin C"
+  
+  utter_head_crown_response:
+  - text: "Điều này thường cho thấy Thiếu ngủ, Não đơ hoặc Căng thẳng.\n\ Sau đây là một số biện pháp khắc phục tương tự:\n\ Thiếu ngủ - 1. Ngủ đủ giấc, 2. Tránh sử dụng thiết bị điện tử trước khi ngủ.\n\ Não bộ Đóng băng - 1. Ở trong môi trường ấm áp, 2. Che đầu trước khi ra ngoài.\n\ Căng thẳng - 1. Thư giãn với Yoga, 2. Uống nước, 3. Tắt đèn"
+  utter_head_eyes_response:
+  - text: "Điều này thường cho biết Thay đổi số lượng mắt hoặc Căng thẳng.\n\ Sau đây là một số biện pháp khắc phục tương tự :\n\ Thay đổi số lượng mắt - 1. Kiểm tra lại số lượng của bạn, 2. Giới hạn thời gian sử dụng thiết bị, 3. Nghỉ giải lao trong mỗi 30 phút.\n\ Căng thẳng - 1. Nhâm nhi trà gừng, 2. Mát-xa, 3. Chườm lạnh"
+  utter_flu_response:
+  - text: "Điều này thường do sốt cao, nhức đầu, đau cơ, ho, sổ mũi hoặc cảm giác nôn mửa.\n\ Sau đây là một số biện pháp khắc phục tương tự:\n\ 1. Nghỉ ngơi nhiều 2. Giữ nước 3. Súc miệng bằng nước muối trị viêm họng 4. Rửa tay thường xuyên bằng nước và xà phòng"
+  utter_vision_types:
+  - text: "1. Bạn có sử dụng kính áp tròng trong một thời gian dài không?\n\ 2. Bạn bị thiếu ngủ?\n\ 3. Mắc các bệnh như viêm khớp, tiểu đường hoặc mang thai? Có | Không"
+  utter_dry_eyes_response:
+  - text: "Bạn có triệu chứng Khô mắt.\n\ Đây là tình trạng phổ biến xảy ra khi nước mắt của bạn không thể cung cấp đủ chất bôi trơn cho mắt.\n\ Sau đây là một số biện pháp khắc phục tình trạng này:\n\ 1. Nhân tạo nước mắt hoặc thuốc nhỏ mắt bôi trơn khác, 2. Chườm ấm 3. Cho mắt nghỉ ngơi 4. Ngủ nhiều hơn"
+  utter_allergy_eyes_response:
+  - text: "Bạn có các triệu chứng của Dị ứng mắt.\n\ Chúng xảy ra khi mắt phản ứng với các chất gây dị ứng như bụi, tiếp xúc với ánh nắng mặt trời, vi khuẩn hoặc vi rút, phấn hoa, khói hoặc kính áp tròng gây kích ứng mắt.\n\ Sau đây là một số biện pháp khắc phục tương tự :\n\ 1. Rửa mắt 2. Chườm lạnh 3. Ở trong nhà 4. Bôi thuốc nhỏ mắt dị ứng"
+  utter_stomach_types:
+  - text: "Bạn có gặp phải bất kỳ vấn đề nào sau đây không: Đầy hơi, Táo bón, Đầy hơi? Có | Không"
+  utter_gas_response:
+  - text: "Sau đây là một số biện pháp khắc phục tương tự:\n\ Đầy hơi - 1. Ăn uống điều độ, 2. Thay nước ngọt có ga 3. Cắt giảm muối.\n\ Táo bón - 1. Uống nhiều nước hơn, 2. Tăng cường ăn chất xơ hòa tan như cám yến mạch, lúa mạch, quả hạch, hạt cũng như một số loại trái cây và rau quả 3. Tập thể dục nhiều hơn.\n\ Gas - 1. Ngồi xuống trong mỗi bữa ăn và ăn chậm, 2.Tránh soda và đồ uống có ga khác. 3. Tìm cách đưa việc tập thể dục vào thói quen của bạn, chẳng hạn như đi dạo sau bữa ăn."
+  utter_poison_response:
+  - text: "Sau đây là các biện pháp khắc phục một số nguyên nhân khác của Đau dạ dày:\n\ Đau bụng dưới - 1. Sử dụng túi sưởi, 2. Giảm uống cà phê, trà và rượu vì những thứ này có thể làm cơn đau nặng hơn. 3.Nhận nghỉ ngơi nhiều.\n\ Nôn mửa - 1.Ăn thức ăn nhạt, nhạt 2.Tránh thức ăn chiên, nhiều dầu mỡ hoặc ngọt. 3.Ăn chậm và chia thành nhiều bữa nhỏ, thường xuyên hơn.\n\ Chuyển động thả lỏng - 1.Uống nước gừng , 2. Uống nước chanh pha muối 3. Ăn lựu"
+  utter_iamabot:
+  - text: "Tôi là một bot, được hỗ trợ bởi Rasa."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,13 @@
+version: "2.0"
+
+rules:
+
+- rule: Nói lời tạm biệt bất cứ lúc nào người dùng nói lời tạm biệt
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Nói 'Tôi là bot' bất cứ lúc nào người dùng thách thức
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

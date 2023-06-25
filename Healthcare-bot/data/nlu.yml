@@ -1,0 +1,133 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Chao
+    - loo
+    - chào
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - bye
+    - see you
+    - good night
+    - goodbye
+    - have a nice day
+    - exit
+
+- intent: affirm
+  examples: |
+    - yes
+    - s
+    - ok
+    - okay
+    - indeed
+    - of course
+    - yaa
+    - yeah
+    - y
+    - correct
+    - Co
+    - Mot chut
+    - một chút
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - n
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - khong han
+    - không hẳn
+
+- intent: day
+  examples: |
+    - less than 24 hours
+    - more than 24 hours
+    - it 
+    - nhieu
+    - less
+    - more
+    - l
+    - m
+    - quen
+
+- intent: head_symptom
+  examples: |
+    - dau
+    - d
+
+- intent: head_whole
+  examples: |
+    - ca
+    - toan
+    - c
+    - ca
+    - nguyen
+
+- intent: head_sides
+  examples: |
+    - hai ben
+    - ben
+    - hai
+
+- intent: head_crown
+  examples: |
+    - dinh
+    - d
+
+- intent: head_eyes
+  examples: |
+    - xung quanh
+    - xq
+
+- intent: flu_symptom
+  examples: |
+   - cúm
+   - cum
+    - ho
+    - lạnh lẽo
+    - lanh
+    - sốt
+    - sot
+    - so mui
+    - nôn
+    - non
+    - co the
+
+- intent: vision_symptom
+  examples: |
+    - tam nhin
+    - nhin
+    - mat
+- intent: stomach_symptom
+  examples: |
+    -  bụng
+    -  bung
+    - cái bụng
+    
+- intent: bot_challenge
+  examples: |
+    - bạn có phải robot không?
+    - Bạn có phải là con người?
+    - tôi đang nói chuyện với bot à?
+    - Tôi đang nói chuyện với một con người sao?
+
